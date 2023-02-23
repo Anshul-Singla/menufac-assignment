@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import ReactECharts from 'echarts-for-react';
 import data from './db.json'
+import ScatterPlot from './components/ScatterPlot';
 
 function App() {
-  console.log('data:', data)
+  const [beverages , setBeverages] = useState(data)
 
   return (
     <div className="App">
-      <h1>life_is_awesome....</h1>
+      <ScatterPlot data={beverages}/>
     </div>
   );
 }
