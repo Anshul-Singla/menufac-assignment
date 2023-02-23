@@ -30,10 +30,17 @@ const ScatterPlot = ({theme, data}) => {
     ],
   }
 
-  return <ReactECharts 
-        option={options}
-        theme={theme}
-  />
+  return (
+    <>
+      <h3>Scatter Plot</h3>
+      <ReactECharts 
+            option={options}
+            theme={theme}
+      />
+    </>
+  )
+  
+  
 
 }
 

@@ -53,10 +53,15 @@ const BarChart = ({theme ,data}) => {
         },
       }
     
-      return <ReactECharts 
-      option={options} 
-      theme={theme}
-      />
+      return (
+        <>
+          <h3>Bar Chart</h3>
+          <ReactECharts 
+                option={options}
+                theme={theme}
+          />
+        </>
+      )
 }
 
 export default BarChart
