@@ -13,7 +13,7 @@ const ScatterPlot = ({data}) => {
   }
 
   const options = {
-    // grid: { top: 8, right: 8, bottom: 24, left: 36 },
+    grid: { top: 35, right: 100, bottom: 25, left: 30 },
     xAxis: {
       name :"Color Intensity",
       type:"value",
@@ -37,9 +37,11 @@ const ScatterPlot = ({data}) => {
 
   return <ReactECharts 
         option={options}
-        style={{
-            width:'50vw'
-          }}
+        // style={{
+        //     width:'70vw',
+        //     border:'2px dashed teal',
+        //     margin :'10px auto'
+        //   }}
   />
 
 }

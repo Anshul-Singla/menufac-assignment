@@ -25,7 +25,7 @@ const BarChart = ({data}) => {
 
     console.log('barData:', barData)
     const options = {
-        // grid: { top: 8, right: 8, bottom: 24, left: 36 },
+      grid: { top: 35, right: 100, bottom: 25, left: 30 },
         xAxis: {
           name :"Alcohol",
           type:"category",
@@ -55,9 +55,11 @@ const BarChart = ({data}) => {
     
       return <ReactECharts 
       option={options} 
-      style={{
-        width:'50vw'
-      }}
+      // style={{
+      //   width:'70vw',
+      //   border:'2px dashed teal',
+      //   margin :'10px auto'
+      // }}
       />
 }
 
