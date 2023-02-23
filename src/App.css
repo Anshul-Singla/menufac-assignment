@@ -11,10 +11,33 @@
   background-size: cover;
   
 }
-.App>*{
+.App>*:not(.nav){
   width:70vw;
   border:2px dashed teal;
   margin :10px auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.nav{
+  display: flex;
+  width: 70vw;
+  margin: 0 auto;
+  align-items: center;
+ 
+}
+button{
+  font: 16px sans-serif;
+  margin: 20px auto;
+  color: #fff;
+  background-color: teal;
+  padding: 20px;
+  border: 5px solid whitesmoke;
+  border-radius: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width:850px) {
+  .App>*:not(.nav){
+    width:95vw;
+    margin :20px auto;
+  }
 }
 

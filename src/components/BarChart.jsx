@@ -2,8 +2,8 @@ import React from 'react';
 import ReactECharts from 'echarts-for-react';
 
 
-const BarChart = ({data}) => {
-    console.log('data:', data);
+const BarChart = ({theme ,data}) => {
+    // console.log('data:', data);
     let malic = 0 , count =0 ;
     const barData = [];
     for(let i=0 ; i<data.length ; i++){
@@ -20,16 +20,16 @@ const BarChart = ({data}) => {
             barData.push(malic / count);
             malic = 0;count=0
         }
-        console.log('barData:', barData)
+        // console.log('barData:', barData)
     }
 
-    console.log('barData:', barData)
+    // console.log('barData:', barData)
     const options = {
-      grid: { top: 35, right: 100, bottom: 25, left: 30 },
+      grid: { top: 35, right: 60, bottom: 25, left: 50 },
         xAxis: {
           name :"Alcohol",
           type:"category",
-          data:['Alcohol1', 'Alcohol2', 'Alcohol3'],
+          data:['1', '2', '3'],
         },
         yAxis: {
           name :"Malic Acid",
@@ -55,11 +55,7 @@ const BarChart = ({data}) => {
     
       return <ReactECharts 
       option={options} 
-      // style={{
-      //   width:'70vw',
-      //   border:'2px dashed teal',
-      //   margin :'10px auto'
-      // }}
+      theme={theme}
       />
 }
 
