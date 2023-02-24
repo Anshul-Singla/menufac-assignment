@@ -28,7 +28,18 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Data ploting looks like
+- After `yarn start` page will look like this
+
+![scateer](https://github.com/Anshul-Singla/menufac-assignment/blob/main/screenshots/Screenshot_8.png)
+![scateer](https://github.com/Anshul-Singla/menufac-assignment/blob/main/screenshots/Screenshot_7.png)
+![scateer](https://github.com/Anshul-Singla/menufac-assignment/blob/main/screenshots/Screenshot_6.png)
+
+ - `Scatter plot` in both Dark and Light mode 
+ 
 ![scateer](https://github.com/Anshul-Singla/menufac-assignment/blob/main/screenshots/Screenshot_2.png)
 ![scateer](https://github.com/Anshul-Singla/menufac-assignment/blob/main/screenshots/Screenshot_3.png)
+
+- `Bar Graph` in both Dark and Light mode 
+
 ![scateer](https://github.com/Anshul-Singla/menufac-assignment/blob/main/screenshots/Screenshot_4.png)
 ![scateer](https://github.com/Anshul-Singla/menufac-assignment/blob/main/screenshots/Screenshot_5.png)
